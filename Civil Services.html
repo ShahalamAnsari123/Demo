@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Degree - soutenir</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.image {
+  /* The image used */
+  background-image: url("image.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+#navbar {
+  background-color: hsl(300, 3%, 16%);
+  position: fixed;
+  top: 00px;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  z-index: 999;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #fafaf9;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #f4f5f7;
+  color: rgb(15, 15, 15);
+}
+
+.fade-in {
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1{
+  font-family:'Oswald', sans-serif;
+}
+
+
+#myDivI,#myDivE,#myDivJ,#myDivC {
+  overflow: auto;
+  background-color: #ddd;
+  height: 300px;
+  width: 450px;
+  font-family:'Oswald', sans-serif;
+  transition: all 0.5s ease;
+
+  /*for glass like effect*/
+  background-color: rgba(255, 255, 255, 0.06);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(15px);
+
+}
+
+#myDivI.fullscreen,#myDivE.fullscreen,#myDivJ.fullscreen,#myDivC.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 999;
+  background-color: hwb(300 97% 3% / 0.425);
+}
+
+/*
+.hele{font-size: 1.5rem;
+font-size: 1.25rem; 
+font-weight: 500;
+font-family: "Inter", sans-serif; 
+margin-bottom: 0.5rem; 
+color: #FFA500; }
+*/
+.content {
+  font-size: xx-large;
+  line-height: 1.5;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bold;
+  letter-spacing: normal;
+  word-spacing: 5px;
+  color: rgba(10, 10, 10, 0.918);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#myDivI:hover,#myDivE:hover,#myDivJ:hover,#myDivC:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/*Have to make responsive !!!!*/
+.hele {
+  --s: 0.1em;   /* the thickness of the line */
+  --c: #2c4bff; /* the color */
+  
+  color: #0000;
+  padding-bottom: var(--s);
+  background: 
+    linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+  -webkit-background-clip: text,padding-box;
+          background-clip: text,padding-box;
+  transition: 0.5s;
+}
+.hele:hover {--_p: 100%}
+
+.hele {
+  font-family: system-ui, sans-serif;
+  font-size: 5rem;
+  cursor: pointer;
+}
+
+
+
+/*.txtOfContent{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: larger;
+
+}
+*/
+
+
+    </style>
+  </head>
+  <body class="image">
+    <div id="navbar">
+      <a href="Home Page.html">Home</a>
+      <a href="form.html">Career Advice</a>
+      <a href="Streams.html">New Journey</a>
+    </div>
+
+<h1 align="center" class=" fade-in text-gray-700 text-5xl mt-20 mb-20 font-bold">
+  
+  
+
+
+
+
+
+
+
+                                <!--   First Entry  -->
+
+                                    Civil Services Exam
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  
+                                  </h1>
+
+<div class="flex justify-around flex-wrap">
+  <div id="myDivI" class="hele"><h2>Introduction</h2></div>
+  <div id="myDivE" class="hele"><h2>Eligibility</h2></div>
+  <div id="myDivJ" class="hele"><h2>Job Eligibility</h2></div>
+  <div id="myDivC" class="hele"><h2>Exam Structure</h2></div>
+</div>
+
+<br><br>
+<hr>
+
+
+
+
+
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-20 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">We hope you found your Dream Career</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-900">----------------------------Thank You------------------------------</p>
+    </div>
+
+
+            
+            
+                                                                          <!--  Sixth  Entry  -->  
+
+
+   
+</section>
+
+
+<script>
+  // When the user scrolls down 20px from the top of the document, slide down the navbar
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "00px";
+    }
+  }
+  </script>
+
+
+
+
+
+<script>
+    //crads js
+  const myDivI = document.getElementById("myDivI");
+  const myDivE = document.getElementById("myDivE");
+  const myDivJ = document.getElementById("myDivJ");
+  const myDivC = document.getElementById("myDivC");
+
+  const headingI = myDivI.innerText;
+  const headingE = myDivE.innerText;
+  const headingJ = myDivJ.innerText;
+  const headingC = myDivC.innerText;
+
+myDivI.addEventListener("click", () => {
+myDivI.classList.toggle("fullscreen");
+if (myDivI.classList.contains("fullscreen")) {
+    myDivI.classList.remove('hele');
+    myDivI.classList.add('content');
+    myDivI.innerHTML="The Civil Services Examination (CSE) is conducted by the Union Public Service Commission (UPSC) in India to recruit candidates for various prestigious civil service positions in the country. These positions include Indian Administrative Service (IAS), Indian Police Service (IPS), Indian Foreign Service (IFS), and other central government Group A and Group B services.";                //  Second Entry   (Introduction)
+    }
+    else {myDivI.innerText=headingI;myDivI.classList.remove('content');myDivI.classList.add('hele');}
+});
+
+myDivE.addEventListener("click", () => {
+myDivE.classList.toggle("fullscreen");
+if (myDivE.classList.contains("fullscreen")) {
+    myDivE.classList.remove('hele');
+    myDivE.classList.add('content');
+    myDivE.innerText="Eligibility: To appear for the Civil Services Exam, candidates must meet the following eligibility criteria: Nationality: The candidate must be a citizen of India, a subject of Nepal/Bhutan, or a Tibetan refugee who came to India before January 1, 1962, with the intention of permanent settlement. Age Limit: The candidate must be at least 21 years old and not more than 32 years old on the 1st of August of the exam year. Age relaxations are provided for candidates belonging to certain categories. Educational Qualification: The candidate must hold a bachelor's degree from a recognized university. There are no specific restrictions regarding the subject of the degree.";                //  Third Entry    (Eligibility)
+    }
+    else {myDivE.innerText=headingE;myDivE.classList.remove('content');myDivE.classList.add('hele');}
+});
+
+myDivJ.addEventListener("click", () => {
+myDivJ.classList.toggle("fullscreen");
+if (myDivJ.classList.contains("fullscreen")) {
+    myDivJ.classList.remove('hele');
+    myDivJ.classList.add('content');
+    myDivJ.innerHTML="Job Opportunities:The Civil Services offer a wide range of job opportunities in various government departments and organizations. Some of the key positions include: Indian Police Service (IPS) Officer: They are responsible for maintaining law and order, preventing and detecting crimes, and managing the police force. . Indian Foreign Service (IFS) Officer: They represent India in international forums, handle diplomatic relations, and promote India's interests abroad. . Indian Revenue Service (IRS) Officer: They work in revenue and taxation departments, including the Income Tax Department and the Customs and Central Excise Department. . Indian Audit and Accounts Service (IAAS) Officer: They are responsible for auditing government accounts and managing financial matters. ";                //  Fourth Entry   (Job Eligibility)
+    }
+    else {myDivJ.innerText=headingJ;myDivJ.classList.remove('content');myDivJ.classList.add('hele');}
+});
+
+myDivC.addEventListener("click", () => {
+myDivC.classList.toggle("fullscreen");
+if (myDivC.classList.contains("fullscreen")) {
+    myDivC.classList.remove('hele');
+    myDivC.classList.add('content');
+    myDivC.innerHTML="Exam Structure:  The Civil Services Examination consists of three stages: Preliminary Examination (Prelims): It is an objective-type examination consisting of two papers - General Studies and Civil Services Aptitude Test (CSAT). The Prelims serve as a screening test, and the marks obtained are not counted for the final merit.Main Examination (Mains): The Main exam is a written examination consisting of nine papers, including subjects like Essay, General Studies, and optional subjects chosen by the candidate.Personality Test (Interview): Candidates who qualify the Main exam are called for the Personality Test, which evaluates their personality, leadership qualities, and suitability for civil services.";                //  Fifth Entry    (Top Colleges)
+    }
+    else {myDivC.innerText=headingC;myDivC.classList.remove('content');myDivC.classList.add('hele');}
+});
+
+</script>
+
+  </body>
+</html>

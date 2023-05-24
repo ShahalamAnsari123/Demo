@@ -1,0 +1,267 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soutenir-Career Guidance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        
+        @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+/* Override UGG site */
+#main {width: 100%; padding:0;}
+.content-asset p {margin:0 auto;}
+.breadcrumb {display:none;}
+
+/* Helpers */
+/**************************/
+.margin-top-10 {padding-top:10px;}
+.margin-bot-10 {padding-bottom:10px;}
+
+/* Typography */
+/**************************/
+#parallax-world-of-ugg h1 {font-family:'Oswald', sans-serif; font-size:24px; font-weight:400; text-transform: uppercase; color:black; padding:0; margin:0;}
+#parallax-world-of-ugg h2 {font-family:'Oswald', sans-serif; font-size:70px; letter-spacing:10px; text-align:center; color:white; font-weight:400; text-transform:uppercase; z-index:10; opacity:.9;}
+#parallax-world-of-ugg h3 {font-family:'Oswald', sans-serif; font-size:14px; line-height:0; font-weight:400; letter-spacing:8px; text-transform: uppercase; color:black;}
+#parallax-world-of-ugg p {font-family:'Source Sans Pro', sans-serif; font-weight:400; font-size:14px; line-height:24px;}
+.first-character {font-weight:400; float: left; font-size: 84px; line-height: 64px; padding-top: 4px; padding-right: 8px; padding-left: 3px; font-family: 'Source Sans Pro', sans-serif;}
+
+.sc {color: #3b8595;}
+.ny {color: #3d3c3a;}
+.atw {color: #c48660;}
+
+/* Section - Title */
+/**************************/
+#parallax-world-of-ugg .title {background: white; padding: 25px; margin:0 auto; text-align:center;}
+#parallax-world-of-ugg .title h1 {font-size:35px; letter-spacing:8px;}
+
+/* Section - Block */
+/**************************/
+#parallax-world-of-ugg .block {background: white; padding: 60px; width:820px; margin:0 auto; text-align:justify;}
+#parallax-world-of-ugg .block-gray {background: #f2f2f2;padding: 60px;}
+#parallax-world-of-ugg .section-overlay-mask {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: black; opacity: 0.70;}
+
+/* Section - Parallax */
+/**************************/
+#parallax-world-of-ugg .parallax-one {padding-top: 250px; padding-bottom: 285px; overflow: hidden; position: relative; width: 100%; 
+    background-image: url(studying.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: top center;}
+#parallax-world-of-ugg .parallax-two {padding-top: 400px; padding-bottom: 400px; overflow: hidden; position: relative; width: 100%; 
+    background-image: url(working.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+#parallax-world-of-ugg .parallax-three {padding-top: 400px; padding-bottom: 400px; overflow: hidden; position: relative; width: 100%; 
+    background-image: url(getsuccess.jpg); background-attachment: fixed; background-size: cover; -moz-background-size: cover; -webkit-background-size: cover; background-repeat: no-repeat; background-position: center center;}
+
+/* Extras */
+/**************************/
+#parallax-world-of-ugg .line-break {border-bottom:1px solid black; width: 150px; margin:0 auto;}
+
+/* Media Queries */
+/**************************/
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {padding: 40px; width:620px;}
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {padding: 30px; width:420px;}
+  #parallax-world-of-ugg h2 {font-size:30px;}
+  #parallax-world-of-ugg .block {padding: 30px;}
+  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-three {padding-top:100px; padding-bottom:100px;}
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {padding: 30px 15px; width:290px;}
+}
+
+
+
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+/*h2{
+  text-shadow: 0 0 20px #fff, 0 0 30px #f5f3f4, 0 0 40px #f5f3f4, 0 0 50px #f5f3f4, 0 0 60px #f5f3f4, 0 0 70px #f5f3f4, 0 0 80px #f5f3f4;
+}*/
+
+
+
+.semi-transparent-button {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 8px;
+  width: 80%;
+  max-width: 200px;
+  background: #fff; /* fallback color for old browsers */
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+}
+.semi-transparent-button:hover,
+.semi-transparent-button:focus,
+.semi-transparent-button:active {
+  background: #fff;
+  color: #000;
+  transition: all 0.5s ease-in;
+}
+.semi-transparent:focus {
+  outline: none;
+}
+
+.is-blue {
+  background: #1e348e; /* fallback color for old browsers */
+  background: rgba(30, 52, 142, 0.5);
+}
+.is-blue:hover,
+.is-blue:focus,
+.is-blue:active {
+  background: #1e348e; /* fallback color for old browsers */
+  background: rgb(30, 52, 142);
+  color: #fff;
+}
+
+.with-border {
+  border: 1px solid #fff;
+}
+    </style>
+</head>
+<body>
+
+    <div id="parallax-world-of-ugg">
+  
+        <section>
+          <div class="title">
+            <h1>Soutenir</h1>
+          </div>
+        </section>
+        
+        <section>
+            <div class="parallax-one">
+              <h2>To support your career endeavour...</h2>
+              <div class="flex flex-wrap" >
+              <a class="semi-transparent-button with-border" href="form.html">Career Advice</a><br>
+              <a class="semi-transparent-button with-border" href="Streams.html">Explore</a>
+            </div>
+            </div>
+        </section>
+        
+        <section>
+          <div class="block">
+            <p><span class="first-character sc reveal">"</span>Soutenir” -  (to support, in french), is a website to end all the dilemmas of students who are ready move on to the next phase of their life, helping them make right and informed academic and career decisions with confidence. No more making mistakes in academic choices due to others fragmentary and deficient advice derived from hearsay; since Soutenir is here to support, a dream website for a student.
+            </p>
+            <p class="line-break margin-top-10"></p>
+            <p class="margin-top-10 reveal">Below you can read about and try out the two exclusive functionalities that our website provides for career guidance!! If you want to jump right in, click one of the two buttons presented above.</p>
+          </div>
+        </section>
+        
+        <section>
+          <div class="parallax-two">
+            <h2>Showing an Optimized Path...</h2>
+            <div class="flex flex-wrap" >
+                <a class="semi-transparent-button with-border" href="form.html">Career Advice</a><br>
+              </div>
+          </div>
+        </section>
+        
+        <section>
+          <div class="block">
+            <p><span class="first-character ny reveal">Career</span> Advice can be generated for you based on what are you currently doing and what do you want to become in future. Click the button above to give it a shot!!</p>
+            <p class="line-break margin-top-10"></p><br>
+            <p class="margin-top-10 reveal">But if you want to see a bigger (detailed) picture, then keep on scrolling!!</p>
+          </div>
+        </section>
+        
+        <section>
+          <div class="parallax-three">
+            <h2>Explore education system...</h2>
+            <div class="flex flex-wrap" >
+                <a class="semi-transparent-button with-border" href="Content.html">Explore</a>
+              </div>
+          </div>
+        </section>
+        
+        <section>
+          <div class="block">
+            <p><span class="first-character atw reveal">We</span>at Soutenir believes that Career guidance is all about imparting individuaks with enough kowledege and understanding of the education systems and resulting job opprtunities that enables them to select a right career path and destination for themselves.</p>
+            <p class="line-break margin-top-10"></p>
+            <p class="margin-top-10 reveal">Therefor, by clicking the above button you will go on a academic journey which starts from 10th standard, in which you will be able to explore various academic milestones while acquiring all the information about them imaprting you a greater understanding of Indian Edducation System and resulting opprtunities.</p>
+          </div>
+        </section>
+          
+
+
+<!--Sixth(Footer)-->
+<footer class="text-gray-600 body-font mt-20">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <img alt="Workflow" class="h-8 w-auto sm:h-10" src="soutenirSVG.svg">
+        <span class="ml-3 text-xl">Soutenir</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022 Soutenir —
+        <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@Soutenir</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+
+
+
+        </div>
+
+
+<script>
+    function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+</script>
+</body>
+</html>
